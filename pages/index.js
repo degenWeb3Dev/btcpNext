@@ -63,7 +63,7 @@ export default function Home() {
 
 				<div className="nes-container with-title is-centered mt-16 pb-10 max-w-5xl">
 					<p className="title"> _Why ape?_ </p>
-					<p className="mb-8">
+					<p className="mb-8 text-red-500">
 						5% of all transaction gets reflected back to your wallet in Bitcoin!
 					</p>
 
