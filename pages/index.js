@@ -1,22 +1,25 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from "next/head";
+import Image from "next/image";
 
 import Typer from "../components/Typer";
 
-const spinner = <i className="nes-icon coin animate-ping"></i>
+const spinner = <i className="nes-icon coin animate-ping"></i>;
 
 export default function Home() {
-  return (
-    <div>
+	return (
+		<div>
 			<Head>
 				<title>BTCP</title>
-        <meta name="description" content="BTC Printing machine" />
+				<meta name="description" content="BTC Printing machine" />
 				<link rel="icon" href="/favicon.ico" />
-        <link
+				<link
 					href="https://fonts.googleapis.com/css?family=Press+Start+2P"
 					rel="stylesheet"
 				/>
-        <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+				<link
+					href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css"
+					rel="stylesheet"
+				/>
 			</Head>
 
 			<main className="flex flex-col items-center justify-center w-full flex-1 px-4 text-center">
@@ -25,51 +28,36 @@ export default function Home() {
 					<p className="mt-8 text-xl">
 						<Typer>
 							Send me a link of your favourite NFT on opensea for a chance to
-							win a special NFT. When I complete Farza's nft course, I'll
+							win a special NFT. When I complete Farzas nft course, Ill
 							airdrop the winners a special NFT. Check below to see if your a
 							winner.
 						</Typer>
 					</p>
 				</div>
 
-				<div className="mt-8 mb-2 md:w-1/2">
-				</div>
+				<div className="mt-8 mb-2 md:w-1/2"></div>
 
-					<button
-						className={`${
-							"cursor-wait"
-						} nes-btn flex justify-center mt-8 w-96 bg-gray-400 py-3 rounded text-gray-100`}
-					>
-						"Connect metamask"
-					</button>
+				<button className="nes-btn flex justify-center mt-8 w-96 bg-gray-400 py-3 rounded text-gray-100">
+					Connect metamask
+				</button>
 
 				<div className="nes-container is-rounded my-6 max-w-sm p-4">
 					<h3 className="text-xl font-bold">Number of NFT</h3>
 					<p className="mt-4 text-xl">4</p>
 				</div>
 
-					<div className="p-4 max-w-full">
-						<div
-							className={`nes-container is-rounded text-left ${
-								"bg-green-200"
-							}`}
-						>
-							<p className="text-lg font-bold text-gray-800 break-words max-w-screen-lg">
-								<a target="_blank">
-									Opensea nft
-								</a>
-							</p>
-							<p className="text-xs text-gray-600 italic">
-                asdfa
-							</p>
-							<p className="text-gray-600 break-words">From: asdfas</p>
-							<p className="text-gray-600 break-words">
-								Is winner: yes 
-							</p>
-						</div>
+				<div className="p-4 max-w-full">
+					<div className={`nes-container is-rounded text-left`}>
+						<p className="text-lg font-bold text-gray-800 break-words max-w-screen-lg">
+							<a target="_blank">Opensea nft</a>
+						</p>
+						<p className="text-xs text-gray-600 italic">asdfa</p>
+						<p className="text-gray-600 break-words">From: asdfas</p>
+						<p className="text-gray-600 break-words">Is winner: yes</p>
 					</div>
+				</div>
 			</main>
-      <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-    </div>
-  )
+			<Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+		</div>
+	);
 }
