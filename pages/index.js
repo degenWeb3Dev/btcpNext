@@ -68,8 +68,8 @@ export default function Home() {
 					</p>
 
 					<p className="nes-balloon from-left">
-						For limited time we are increaseing to 12% reflection of BTC to your
-						wallet
+						For a limited time we are increasing to 12% reflection of BTC to
+						your wallet
 					</p>
 				</div>
 
@@ -83,6 +83,28 @@ export default function Home() {
 							Ie. buy 100 set to 100.111
 						</li>
 					</ul>
+				</div>
+
+				<div className="nes-container with-title is-centered mt-16 pb-10 max-w-5xl">
+					<p className="title"> _FAQ_ </p>
+					<p className="mb-8">Why can’t I see my BTC earnings?</p>
+					<p className="mb-8">
+						We have a dashboard coming soon, for the time being the most
+						simplest way is to send 1 $BTCP to yourself and your wallet will get
+						updated with WBTC.e rewards.
+					</p>
+
+					<p className="mb-4"> What are the tokenomics?</p>
+					<p className="mb-10">5% Reflections - 4% Marketing - 8% Auto Liquidity</p>
+
+					<p className="mb-4">
+						Why are my reflections showing as $BTC.e instead of $BTC?
+					</p>
+
+					<p>
+						$WBTC.e is Wrapped BTC on the Avalanche blockchain, the value is the
+						same as BTC.
+					</p>
 				</div>
 
 				<div className="mt-8 mb-2">
