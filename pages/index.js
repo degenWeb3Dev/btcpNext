@@ -22,42 +22,84 @@ export default function Home() {
 				/>
 			</Head>
 
-			<main className="flex flex-col items-center justify-center w-full flex-1 px-4 text-center">
-				<div className="mt-8 md:mt-20 max-w-2xl">
-					<h1 className="text-3xl md:text-5xl font-bold">👋 Hey there!</h1>
+			<main className="flex flex-col items-center justify-center w-full flex-1 px-4 text-center mb-8">
+				<div>
+					{" "}
+					<img className="w-400" src="logo2.jpeg" alt="logo" />
+				</div>
+				<div className="max-w-2xl">
+					<h1 className="text-3xl md:text-5xl font-bold">$BTC Print</h1>
 					<p className="mt-8 text-xl">
-						<Typer>
-							Send me a link of your favourite NFT on opensea for a chance to
-							win a special NFT. When I complete Farzas nft course, Ill
-							airdrop the winners a special NFT. Check below to see if your a
-							winner.
-						</Typer>
+						<Typer>Reflection paid in Bitcoin</Typer>
 					</p>
 				</div>
 
-				<div className="mt-8 mb-2 md:w-1/2"></div>
+				<div className="mt-8 mb-2">
+					<a
+						href="https://traderjoexyz.com/#/trade?outputCurrency=0xc1333a2e6f4a50ec20107c19fa73af9e8cc0419b"
+						className="nes-btn is-success flex justify-center mt-8 w-96 bg-gray-400 py-3 rounded text-gray-100"
+					>
+						Buy $BTCP
+					</a>
 
-				<button className="nes-btn flex justify-center mt-8 w-96 bg-gray-400 py-3 rounded text-gray-100">
-					Connect metamask
-				</button>
+					<a
+						href="https://dexscreener.com/avalanche/0x3c41b76e2096cfbfeb891ff097c1caae90792109"
+						className="nes-btn flex justify-center mt-8 w-96 bg-gray-400 py-3 rounded text-gray-100"
+					>
+						See Chart
+					</a>
+					<a
+						href="https://t.me/BTCPrint"
+						className="nes-btn is-primary flex justify-center mt-8 w-96 bg-gray-400 py-3 rounded text-gray-100"
+					>
+						Join our community
+					</a>
+				</div>
 
-				<div className="nes-container is-rounded my-6 max-w-sm p-4">
+				{/* <div className="nes-container is-rounded my-6 max-w-sm p-4">
 					<h3 className="text-xl font-bold">Number of NFT</h3>
 					<p className="mt-4 text-xl">4</p>
+				</div> */}
+
+				<div className="nes-container with-title is-centered mt-16 pb-10 max-w-5xl">
+					<p className="title"> _Why ape?_ </p>
+					<p className="mb-8">
+						5% of all transaction gets reflected back to your wallet in Bitcoin!
+					</p>
+
+					<p className="nes-balloon from-left">
+						For limited time we are increaseing to 12% reflection of BTC to your
+						wallet
+					</p>
 				</div>
 
-				<div className="p-4 max-w-full">
-					<div className={`nes-container is-rounded text-left`}>
-						<p className="text-lg font-bold text-gray-800 break-words max-w-screen-lg">
-							<a target="_blank">Opensea nft</a>
-						</p>
-						<p className="text-xs text-gray-600 italic">asdfa</p>
-						<p className="text-gray-600 break-words">From: asdfas</p>
-						<p className="text-gray-600 break-words">Is winner: yes</p>
-					</div>
+				<div className="nes-container with-title is-centered mt-16 pb-10 max-w-3xl">
+					<p className="title"> _How to buy?_ </p>
+					<ul className="nes-list is-disc text-left">
+						<li className="mb-4">Set slippage to 17% or more</li>
+
+						<li>
+							Protip: add .111 to the end amount of $BTCP token you want to buy.
+							Ie. buy 100 set to 100.111
+						</li>
+					</ul>
+				</div>
+
+				<div className="mt-8 mb-2">
+					<a
+						href="https://twitter.com/BitcoinPrint"
+						className="nes-btn is-success flex justify-center mt-8 w-96 bg-gray-400 py-3 rounded text-gray-100"
+					>
+						Twitter
+					</a>
+					<a
+						href="https://t.me/BTCPrint"
+						className="nes-btn flex justify-center mt-8 w-96 bg-gray-400 py-3 rounded text-gray-100"
+					>
+						Telegram
+					</a>
 				</div>
 			</main>
-			<Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
 		</div>
 	);
 }
