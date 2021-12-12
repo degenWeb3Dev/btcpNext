@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
-import "nes.css/css/nes.min.css";
 import Typer from "../components/Typer";
 
 const spinner = <i className="nes-icon coin animate-ping"></i>
@@ -13,10 +12,11 @@ export default function Home() {
 				<title>BTCP</title>
         <meta name="description" content="BTC Printing machine" />
 				<link rel="icon" href="/favicon.ico" />
-				<link
+        <link
 					href="https://fonts.googleapis.com/css?family=Press+Start+2P"
 					rel="stylesheet"
 				/>
+        <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
 			</Head>
 
 			<main className="flex flex-col items-center justify-center w-full flex-1 px-4 text-center">
